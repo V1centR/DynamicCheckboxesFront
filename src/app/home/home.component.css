@@ -1,0 +1,19 @@
+.wrap{
+    margin: auto;
+    margin-left: 15%;
+    margin-right: 10%;
+    width: 70%;
+    margin-top: 40px;
+}
+
+.buttom-align{ padding-left: 18px; }
+
+.main-card{
+    max-width: 800px;
+    min-width: 200px;
+}
+  
+.example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+}
