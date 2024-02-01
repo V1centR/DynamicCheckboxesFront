@@ -1,0 +1,35 @@
+<div class="wrap">
+  <mat-card class="main-card">
+     <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>Planos especiais</mat-card-title>
+        <mat-card-subtitle>Enquadramento de clientes</mat-card-subtitle>
+     </mat-card-header>
+     <mat-divider></mat-divider>
+     <mat-card-content>
+        <p>
+           <b>Marque as opções abaixo:</b>
+        </p>
+        <div>
+           <table>
+              <tbody>
+                 <tr *ngFor="let items of checkBoxes">
+                    <td>
+                       <mat-checkbox [color]="colorBoxes" [(ngModel)]="items.checked"></mat-checkbox>
+                    </td>
+                    <td>{{items.item}}</td>
+                    <td>&nbsp;</td>
+                 </tr>
+              </tbody>
+           </table>
+        </div>
+     </mat-card-content>
+     <mat-divider></mat-divider>
+     <mat-card-actions>
+        <div class="buttom-align">
+           <button mat-raised-button color="primary" [disabled]="submitButtomDisabled" (click)="onSubmit()">Atualizar</button>
+        </div>
+     </mat-card-actions>
+     <mat-progress-bar mode="indeterminate" *ngIf="progressBar"></mat-progress-bar>
+  </mat-card>
+</div>
